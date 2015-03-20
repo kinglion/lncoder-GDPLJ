@@ -1,9 +1,10 @@
 var player = function(){
-	var _money,_remainday;
+	var _money,_remainday,_event;
 	var init = function(){
 		var data = Array.prototype.shift.apply(arguments);
-		_money = data.init.money;
-		_remainday = data.init.remainDay;
+		_money = data.money;
+		_remainday = data.remainDay;
+		_event = new Event;
 	}
 	var getMoney = function(){
 		return _money;
@@ -27,4 +28,4 @@ var player = function(){
 		getRemainDay : getRemainDay,
 		setRemainDay : setRemainDay,
 	}
-}
+};

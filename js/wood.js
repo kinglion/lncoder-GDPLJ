@@ -1,5 +1,5 @@
 var wood = function(){
-	var create = fucntion(action,fn){
+	var create = function(action,fn){
 		var _initialize;
 		_initialize = function(args){
 			fn.apply(this,args);

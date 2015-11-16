@@ -1,0 +1,26 @@
+{
+  "name": "lncoder-GDPLJ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kinglion/lncoder-GDPLJ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinglion/lncoder-GDPLJ/issues"
+  },
+  "homepage": "https://github.com/kinglion/lncoder-GDPLJ",
+  "devDependencies": {
+    "co": "^4.6.0",
+    "koa": "^2.0.0-alpha.3",
+    "koa-logger": "^1.3.0",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.2.5"
+  }
+}

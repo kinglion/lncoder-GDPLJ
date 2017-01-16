@@ -10,6 +10,7 @@
  
     <!-- CSS -->
     <link rel="stylesheet" href="build/style.css">
+    <link rel="stylesheet" href="build/video/video-js.min.css"
 
 </head>
 <body>
@@ -67,7 +68,78 @@
         </div>
 
         <div class="box">
-            <div class="banner" style="background-image: url(temp/images/banner.jpg)"></div>
+            <div class="index-content">
+                <div class="banner" style="background-image: url(temp/images/banner.jpg)"></div>
+                <div class="u-index-video index-module">
+                    <div class="wrap">
+                        <div class="title-img"><img src="temp/images/video-title.png" alt=""></div>
+                        <div class="classify">
+                            <span class="crumbs"><a href="">品牌</a>/<a href="">试妆</a>/<a href="">花絮</a></span>
+                            <span class="sub-title">Makeup / feature</span>
+                        </div>
+                        <div class="video-content">
+                            <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
+                                <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                                <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                                <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                                <track kind="captions" src="../shared/example-captions.vtt" srclang="en" label="English"></track>
+                                <!-- Tracks need an ending tag thanks to IE9 -->
+                                <track kind="subtitles" src="../shared/example-captions.vtt" srclang="en" label="English"></track>
+                                <!-- Tracks need an ending tag thanks to IE9 -->
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="index-cp index-module">
+                    <div class="wrap">
+                        <div class="cp-left">
+                            <div class="cp-lt">
+                                <div class="title-img">
+                                    <img src="temp/images/module-title.png" alt="">
+                                </div>
+                                <span>亚洲美妆教父</span>
+                            </div>
+                            <div class="cp-lb">
+                                <div class="name">
+                                    <span class="en">Rick Chin</span>
+                                    <span class="cn">千万 老师</span>
+                                </div>
+                                <div class="intro">
+                                    章子怡、张学友、张国荣、刘嘉玲、林心如、梁朝伟、张柏芝等巨星御用化妆造型师，明星化妆及造型界的新一代指引著作《后台》作者，时尚视频网站wer.aisa创始人。作为亚洲美业最具影响力时尚人物，千历老师将与极密彩妆团队一起，精准捕捉一线大牌时尚彩妆趋势，联合SKINMATCH极密全系潮色新品，以20年巨星造型的超丰厚经验，为亚洲女性设计专属潮流妆容。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cp-right">
+                            <div class="head-img">
+                                <img src="temp/images/head-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="index-ft index-module">
+                    <div class="wrap">
+                        <div class="ft-lt">
+                            <div class="title-img">
+                                <img src="temp/images/module-title.png" alt="">
+                            </div>
+                            <span>倾情打造  年度妆容</span>
+                        </div>
+                        <div class="ft-image">
+                            <ul>
+                                <li class="bottom-b ft-1"><a href="" class="img"><img src="temp/images/ft-1.png" alt=""></a><span class="en">NUDE<br/>LOOK</span><span class="cn">韩式水光妆<br/>打造极致裸色</span></li>
+                                <li class="top-b ft-2"><span class="cn">复古女王妆<br/>复古红来袭</span><span class="en">VINTAGE<br/>QUEEN</span><a href="" class="img"><img src="temp/images/ft-2.png" alt=""></a></li>
+                                <li class="top-b ft-3"><span class="en">MODERN<br/>LADY</span><span class="cn">都市时尚妆<br/>流行橘粉派</span><a href="" class="img"><img src="temp/images/ft-3.png" alt=""></a></li>
+                                <li class="bottom-b ft-4"><a href="" class="img"><img src="temp/images/ft-4.png" alt=""></a><span class="cn">潮范街头妆<br/>颜值担当烟熏色</span><span class="en">STREET<br/>STYLE</span></li>
+                                <li class="top-b ft-5"><span class="cn">活力好色妆<br/>释放青春本性</span><span class="en">DYNAMIC<br/>PASSION</span><a href="" class="img"><img src="temp/images/ft-5.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="u-star-product wrap">
                 <div class="i-star-head">
                     <h1>明星产品</h1>
@@ -83,34 +155,125 @@
                         <h2><a href="">敢耀素颜素颜乳</a></h2>
                         <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
                         <h3 class="price"><span>￥</span>321</h3>
-                        <span><a href="">了解更多</a></span>
+                        <span class="more-btn"><a href="">了解更多</a></span>
                     </div>
                     <div class="item">
                         <div class="p-img flex flex-center"><a href=""><img src="temp/images/i-product.jpg" /></a></div>
                         <h2><a href="">敢耀素颜素颜乳</a></h2>
                         <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
                         <h3 class="price"><span>￥</span>321</h3>
-                        <span><a href="">了解更多</a></span>
+                        <span class="more-btn"><a href="">了解更多</a></span>
                     </div>
                     <div class="item">
                         <div class="p-img flex flex-center"><a href=""><img src="temp/images/i-product.jpg" /></a></div>
                         <h2><a href="">敢耀素颜素颜乳</a></h2>
                         <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
                         <h3 class="price"><span>￥</span>321</h3>
-                        <span><a href="">了解更多</a></span>
+                        <span class="more-btn"><a href="">了解更多</a></span>
+                    </div>
+                </div>
+                <div class="i-star-list flex">
+                    <div class="item">
+                        <div class="p-img flex flex-center"><a href=""><img src="temp/images/i-product.jpg" /></a></div>
+                        <h2><a href="">敢耀素颜素颜乳</a></h2>
+                        <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
+                        <h3 class="price"><span>￥</span>321</h3>
+                        <span class="more-btn"><a href="">了解更多</a></span>
+                    </div>
+                    <div class="item">
+                        <div class="p-img flex flex-center"><a href=""><img src="temp/images/i-product.jpg" /></a></div>
+                        <h2><a href="">敢耀素颜素颜乳</a></h2>
+                        <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
+                        <h3 class="price"><span>￥</span>321</h3>
+                        <span class="more-btn"><a href="">了解更多</a></span>
+                    </div>
+                    <div class="item">
+                        <div class="p-img flex flex-center"><a href=""><img src="temp/images/i-product.jpg" /></a></div>
+                        <h2><a href="">敢耀素颜素颜乳</a></h2>
+                        <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
+                        <h3 class="price"><span>￥</span>123</h3>
+                        <span class="more-btn"><a href="">了解更多</a></span>
+                    </div>
+                </div>
+                <div class="i-star-list flex">
+                    <div class="item">
+                        <div class="p-img flex flex-center"><a href=""><img src="temp/images/i-product.jpg" /></a></div>
+                        <h2><a href="">敢耀素颜素颜乳</a></h2>
+                        <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
+                        <h3 class="price"><span>￥</span>123</h3>
+                        <span class="more-btn"><a href="">了解更多</a></span>
+                    </div>
+                    <div class="item">
+                        <div class="p-img flex flex-center"><a href=""><img src="temp/images/i-product.jpg" /></a></div>
+                        <h2><a href="">敢耀素颜素颜乳</a></h2>
+                        <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
+                        <h3 class="price"><span>￥</span>321</h3>
+                        <span class="more-btn"><a href="">了解更多</a></span>
+                    </div>
+                    <div class="item">
+                        <div class="p-img flex flex-center"><a href=""><img src="temp/images/i-product.jpg" /></a></div>
+                        <h2><a href="">敢耀素颜素颜乳</a></h2>
+                        <h3>创建一个完美无瑕的亚光又明亮的肤色。</h3>
+                        <h3 class="price"><span>￥</span>321</h3>
+                        <span class="more-btn"><a href="">了解更多</a></span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
+            <div class="wrap">
+                <div class="footer-link flex">
+                    <dl>
+                        <dt>SKIN MATCH</dt>
+                        <dd><a href="">品牌短片</a></dd>
+                        <dd><a href="">极密理念</a></dd>
+                        <dd><a href="">创色之旅</a></dd>
+                        <dd><a href="">最新活动</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>彩妆ＮＯＷ！</dt>
+                        <dd><a href="">TOP10</a></dd>
+                        <dd><a href="">底妆</a></dd>
+                        <dd><a href="">眼妆</a></dd>
+                        <dd><a href="">颊彩</a></dd>
+                        <dd><a href="">唇妆</a></dd>
+                        <dd><a href="">卸妆</a></dd>
+                        <dd><a href="">工具</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>好色咖</dt>
+                        <dd><a href="">好色大咖高俊熙</a></dd>
+                        <dd><a href="">1分钟潮妆</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>密享会</dt>
+                        <dd><a href="">尊享礼遇</a></dd>
+                        <dd><a href="">在线试妆（手机版）</a></dd>
+                        <dd><a href="">积分兑礼</a></dd>
+                    </dl>
+                    <div class="qrcode">
+                        <img src="temp/images/qrcode.jpg" alt="">
+                        <p>扫一扫立即关注<br/>极密官方微信</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="">常见问题</a>
+                    <a href="">网站使用条款</a>
+                    <a href="">隐私政策</a>
+                    <a href="">网站地图</a>
+                    <a href="">粤xxx备xxxxxxx号-z</a>
+                </div>
+            </div>
         </div>
     
 
     <!-- Scripts -->
     <script src="build/jquery-3.1.1.min.js"></script>
     <script src="build/jquery.plugins.min.js"></script>
+    <script src="build/video/video.min.js"></script>
     <script src="build/common.js"></script>
+    <script src="build/index.js"></script>
 
 </body>
 </html>

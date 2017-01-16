@@ -3,10 +3,10 @@
  * Dependencies
  */
 const Koa = require('koa');
-const fs = require("fs");
+const fs = require('fs');
 const app = new Koa();
+const passport = require("koa-passport");
 const mongoose = require("mongoose");
-
 
 /**
  * Config
@@ -26,26 +26,13 @@ mongoose.connection.on("error", function(err) {
  */
 const modelsPath = config.app.root + "/src/models";
 fs.readdirSync(modelsPath).forEach(function(file) {
-  console.log(~file.indexOf("js"));
   if (~file.indexOf("js")) {
     require(modelsPath + "/" + file);
   }
 });
 
-// logger
+require("./config/passport")(passport, config);
+require("./config/koa")(app, config, passport);
 
-app.use((ctx, next) => {
-  const start = new Date;
-  return next().then(() => {
-    const ms = new Date - start;
-    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
-  });
-});
-
-// response
-
-app.use(ctx => {
-  ctx.body = 'Hello World';
-});
 
 app.listen(3000);

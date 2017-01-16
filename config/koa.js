@@ -9,6 +9,7 @@ const views = require("co-views");
 const compress = require("koa-compress");
 const errorHandler = require("koa-error");
 const bodyParser = require("koa-bodyparser");
+const convert = require("koa-convert");
 
 const STATIC_FILES_MAP = {};
 const SERVE_OPTIONS = { maxAge: 365 * 24 * 60 * 60 };
@@ -18,37 +19,37 @@ module.exports = function(app, config, passport) {
   app.keys = config.app.keys;
 
   if (config.app.env !== "test") {
-    app.use(logger());
+    app.use(convert(logger()));
   }
 
-  app.use(errorHandler());
+  app.use(convert(errorHandler()));
 
   if (config.app.env === "production") {
     app.use(serve(path.join(config.app.root, "build", "public"), SERVE_OPTIONS, STATIC_FILES_MAP));
   } else {
-    app.use(require("koa-proxy")({
+    app.use(convert(require("koa-proxy")({
       host: "http://localhost:2992",
       match: /^\/_assets\//,
-    }));
+    })));
   }
 
-  app.use(session({
+  app.use(convert(session({
     key: "koareactfullexample.sid",
     store: new MongoStore({ url: config.mongo.url }),
-  }));
+  })));
 
   app.use(bodyParser());
   app.use(passport.initialize());
   app.use(passport.session());
 
-  app.use(function *(next) {
+  app.use(convert(function *(next) {
     this.render = views(config.app.root + "/src/views", {
       map: { html: "swig" },
       cache: config.app.env === "development" ? "memory" : false,
     });
     yield next;
-  });
+  }));
 
-  app.use(compress());
-  app.use(responseTime());
+  app.use(convert(compress()));
+  app.use(convert(responseTime()));
 };

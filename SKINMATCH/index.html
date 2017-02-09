@@ -115,7 +115,23 @@
         <div class="box">
             <div class="index-content">
                 <div class="banner">
-                    <img src="temp/images/banner.jpg" class="img-responsive"  alt="">
+                    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-generic" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="temp/images/banner.jpg" class="img-responsive" />
+                            </div>
+                            <div class="item">
+                                <img src="temp/images/banner1.jpg" class="img-responsive" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="u-index-video index-module">
                     <div class="wrap">
